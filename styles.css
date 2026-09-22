@@ -127,8 +127,8 @@ p { margin: 0 0 1rem; }
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 56px;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 48px;
   align-items: center;
 }
 .eyebrow {
@@ -153,7 +153,14 @@ p { margin: 0 0 1rem; }
   width: 8px; height: 8px; margin-top: -4px;
   background: var(--sage-deep); border-radius: 50%;
 }
-.hero-media img { border-radius: var(--radius); box-shadow: var(--shadow); }
+.hero-media { position: relative; }
+.hero-media img {
+  width: 112%;
+  max-width: none;
+  height: auto;
+  margin-left: -6%;
+  filter: drop-shadow(0 26px 44px rgba(122, 90, 92, 0.18));
+}
 
 /* ===== Sections base ===== */
 .section { position: relative; overflow: hidden; padding: 76px 0; }
