@@ -225,6 +225,19 @@ p { margin: 0 0 1rem; }
 
 /* ===== 18 páginas ===== */
 .section-content { background: linear-gradient(180deg, transparent, rgba(246, 217, 211, 0.35)); }
+.pages-preview {
+  position: relative; z-index: 1;
+  margin: 44px 0 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: center;
+}
+.pages-preview figure { margin: 0; }
+.pages-preview img {
+  width: 100%; height: auto; display: block;
+  filter: drop-shadow(0 24px 40px rgba(122, 90, 92, 0.16));
+}
 .pages-grid {
   list-style: none;
   padding: 0;
@@ -341,6 +354,7 @@ p { margin: 0 0 1rem; }
   .section { padding: 56px 0; }
   .hero { padding: 40px 0 56px; }
   .cards-3, .cards-4, .pages-grid { grid-template-columns: 1fr; }
+  .pages-preview { grid-template-columns: 1fr; }
   .hero-cta { gap: 16px; }
   .cta-inner { padding: 40px 24px; }
   .header-inner .btn-nav { display: none; }
