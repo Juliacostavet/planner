@@ -142,9 +142,17 @@ p { margin: 0 0 1rem; }
   border-radius: 999px;
   margin-bottom: 22px;
 }
-.lead { font-size: 1.18rem; color: var(--ink-soft); max-width: 34ch; margin-top: 18px; }
+.lead { font-size: 1.18rem; color: var(--ink-soft); max-width: 42ch; margin-top: 18px; }
 .hero-note { font-family: var(--serif); font-style: italic; font-size: 1.1rem; color: var(--sage-deep); }
-.hero-cta { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; margin: 30px 0 26px; }
+.hero-highlights { list-style: none; padding: 0; margin: 22px 0 4px; display: grid; gap: 10px; }
+.hero-highlights li { display: flex; align-items: center; gap: 10px; font-size: .98rem; color: var(--ink); font-weight: 500; }
+.hero-highlights .hl-ico {
+  display: grid; place-items: center;
+  width: 26px; height: 26px; flex: none;
+  background: rgba(207, 91, 106, 0.12); color: var(--rose-deep);
+  border-radius: 50%; font-size: .85rem;
+}
+.hero-cta { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; margin: 26px 0 26px; }
 .hero-badges { list-style: none; display: flex; flex-wrap: wrap; gap: 10px 22px; padding: 0; margin: 0; }
 .hero-badges li { position: relative; padding-left: 22px; font-size: .9rem; color: var(--ink-soft); }
 .hero-badges li::before {
