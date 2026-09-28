@@ -363,12 +363,17 @@ p { margin: 0 0 1rem; }
   .fit-grid { grid-template-columns: 1fr; }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 560px) {
   .section { padding: 56px 0; }
   .hero { padding: 40px 0 56px; }
   .cards-3, .cards-4, .pages-grid { grid-template-columns: 1fr; }
-  .pages-preview { grid-template-columns: 1fr; gap: 40px; }
-  .pages-preview img { transform: scale(1.10; }
+  .pages-preview { grid-template-columns: 1fr; gap: 32px; }
+  .pages-preview figure { margin: 0-12px; overflow: visible; }
+  .pages-preview img { width: 100%;
+                      max-width: none; 
+                      height: auto; 
+                      transform: scale(1.20); transform-origin: center center; filter: drop-shadow(0 12px rgba(122,90,92,0.18));
+                     }
   .hero-cta { gap: 16px; }
   .cta-inner { padding: 40px 24px; }
   .header-inner .btn-nav { display: none; }
